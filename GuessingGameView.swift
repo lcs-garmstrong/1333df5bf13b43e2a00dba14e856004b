@@ -12,7 +12,7 @@ struct GuessingGameView: View {
     // MARK: Stored properties
     
     // The input collected from the Slider
-	// ADD MISSING CODE HERE
+    // ADD MISSING CODE HERE
     
     // The secret target that the user is trying to guess
     @State var target = Int.random(in: 0...100)
@@ -22,23 +22,23 @@ struct GuessingGameView: View {
     
     // MARK: Computed properties
     var body: some View {
-
+        
         VStack {
-
-			// Collect the user's input using a Slider
-			// ADD MISSING CODE HERE
-			
-			// Show the user's input to them using a Text view        
-			// ADD MISSING CODE HERE
+            
+            // Collect the user's input using a Slider
+            // ADD MISSING CODE HERE
+            
+            // Show the user's input to them using a Text view
+            // ADD MISSING CODE HERE
             
             // Let the user check to see if their current guess is correct
             Button(action: {
                 
-                // Convert the user's input, which is a Double, into 
+                // Convert the user's input, which is a Double, into
                 let currentGuessAsInteger = Int(currentGuess)
                 
                 // Compare the user's guess to the target and give appropriate feedback
-				// ADD MISSING CODE HERE
+                // ADD MISSING CODE HERE
                 
             }, label: {
                 Text("Submit Guess")
@@ -67,3 +67,4 @@ struct GuessingGameView_Previews: PreviewProvider {
         }
     }
 }
+

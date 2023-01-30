@@ -34,7 +34,7 @@ struct GuessingGameView: View {
             // Let the user check to see if their current guess is correct
             Button(action: {
                 
-                // Convert the user's input, which is a Double, into
+                // Convert the user's input, which is a Double, into an Int
                 let currentGuessAsInteger = Int(currentGuess)
                 
                 // Compare the user's guess to the target and give appropriate feedback
